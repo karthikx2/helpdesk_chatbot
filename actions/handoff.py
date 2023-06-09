@@ -62,6 +62,7 @@ class ActionHandoff(Action):
 
         if url:
             if tracker.get_latest_input_channel() == "rest":
+                print(f"URL ::::: {url}")
                 dispatcher.utter_message(
                     json_message={
                         "handoff_host": url,
