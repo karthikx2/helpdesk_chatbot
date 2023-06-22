@@ -19,7 +19,7 @@ stories:
 - story: greet + give info
   steps:
   - intent: greet
-  - action: utter_greet
+  # - action: utter_greet
   - action: utter_help
 
 - story: say goodbye

@@ -146,7 +146,7 @@ responses:
   utter_out_of_scope:
   - text: Sorry, I'm not sure how to respond to that. Type "help" for assistance.
   utter_greet:
-  - text: Hallo! I'm your IT Helpdesk Assistant.
+  - text: Hi ! I'm your IT Helpdesk Assistant.
   utter_goodbye:
   - text: Goodbye!
   utter_iamabot:
@@ -171,9 +171,9 @@ responses:
   utter_no_email:
   - text: Sorry, "{email}" isn't in our incident management system. Please try again.
   utter_help:
-  - text: "I can help you open a service request ticket, or check the status of your open incidents. \nYou can ask me things like: \n- Open an incident \n- Help me reset my password \n- I'm having a issue with my email \n- What's the status of the ticket I opened?"
+  - text: "I can help you open a service request ticket, or check the status of your open incidents. \nYou can ask me things like: \n- Open an incident \n- Help me reset my password \n- I'm having a issue with my email"
   utter_welcome:
-  - text: You're welcome!
+  - text: You're welcome
   utter_default:
   - text: I didn't quite understand that. Could you rephrase?
   utter_ask_use_previous_email:
@@ -183,14 +183,14 @@ responses:
     buttons:
     - title: Yes
       payload: /affirm
-    - title: No, cancel the incident
+    - title: No,  
       payload: /deny
   utter_incident_creation_canceled:
   - text: Alright, I have cancelled the incident.
   utter_ask_whatelse:
   - text: What else can I help you with?
   utter_ask_handoff:
-  - text: It looks like you want to be transferred to a human agent.
+  - text: "It looks like you want to be transferred to Finance Assistant.\n Do you want me to transfer you to Finance Assistant ?"
   utter_handoff:
   - text: Alright, I'll try to transfer you.
   utter_wouldve_handed_off:

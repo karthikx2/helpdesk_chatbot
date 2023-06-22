@@ -36,8 +36,7 @@ class ActionHandoffOptions(Action):
                 for bot, config in handoff_config.items()
             ]
             dispatcher.utter_message(
-                text="I can't transfer you to a human, \
-                      but I can transfer you to one of these bots",
+                text="",
                 buttons=buttons,
             )
         return []
@@ -58,21 +57,24 @@ class ActionHandoff(Action):
         handoff_to = tracker.get_slot("handoff_to")
 
         handoff_bot = handoff_config.get(handoff_to, {})
-        url = handoff_bot.get("url")
+        url = "http://3.145.51.33:5006"
+        print(f"URL :: {url}  out")
 
         if url:
-            if tracker.get_latest_input_channel() == "rest":
-                print(f"URL ::::: {url}")
-                dispatcher.utter_message(
-                    json_message={
-                        "handoff_host": url,
-                        "title": handoff_bot.get("title"),
-                    }
-                )
-            else:
-                dispatcher.utter_message(
-                    template="utter_wouldve_handed_off", handoffhost=url
-                )
+            print(f"URL :: {url}")
+
+            # if tracker.get_latest_input_channel() == "rest":
+            print(f"REST")
+            dispatcher.utter_message(
+                json_message={
+                    "handoff_host": url,
+                    "title": "Finance Assistant",
+                }
+            )
+            # else:
+            #     dispatcher.utter_message(
+            #         template="utter_wouldve_handed_off", handoffhost=url
+            #     )
         else:
             dispatcher.utter_message(template="utter_no_handoff")
 
