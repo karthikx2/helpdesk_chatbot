@@ -101,7 +101,7 @@ You can also try out the bot locally using Rasa X by running
 rasa x
 ```
 
-Refer to our guided workflow in the [Wiki page](https://github.com/RasaHQ/helpdesk-assistant/wiki/Using-Rasa-X-with-the-Helpdesk-Assistant) for how to get started with Rasa X in local mode.
+Refer to our guided workflow in the [Wiki page](https://github.com/GB-x2/finance_chatbot/wiki/Using-Rasa-X-with-the-Helpdesk-Assistant) for how to get started with Rasa X in local mode.
 
 ## Things you can ask the bot
 
@@ -206,7 +206,7 @@ Using the default set up, the handoff skill enables this kind of conversation wi
 
 The simplest way to use the handoff feature is to do the following:
 
-1. Clone [chatroom](https://github.com/RasaHQ/chatroom) and [Financial-Demo](https://github.com/RasaHQ/Financial-Demo) alongside this repo
+1. Clone [chatroom](https://github.com/RasaHQ/chatroom) and [Financial-Demo](https://github.com/GB-x2/finance_chatbot) alongside this repo
 2. In the chatroom repo, install the dependencies:
 ```bash
 yarn install
@@ -286,7 +286,7 @@ Handoff hosts can be other locally running rasa bots, or anything that serves re
 accepts. If a handoff host is not a rasa bot, you will of course want to update the response text to tell the user
 who/what they are being handed off to.
 
-The [Financial-Demo](https://github.com/RasaHQ/Financial-Demo) bot has been set up to handle handoff in exactly the same way as Helpdesk-Assistant,
+The [Financial-Demo](https://github.com/GB-x2/finance_chatbot) bot has been set up to handle handoff in exactly the same way as Helpdesk-Assistant,
 so the simplest way to see handoff in action is to clone Financial-Demo alongside this repo.
 
 If you list other locally running bots as handoff hosts, make sure the ports on which the various rasa servers & action servers are running do not conflict with each other.
