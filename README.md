@@ -193,7 +193,7 @@ Your input ->  thanks
 ## Handoff
 
 This bot includes a simple skill for handing off the conversation to another bot or a human.
-This demo relies on [this fork of chatroom](https://github.com/RasaHQ/chatroom) to work, however you
+This demo relies on [this fork of chatroom](https://github.com/GB-x2/chatroom_ui) to work, however you
 could implement similar behaviour in another channel and then use that instead. See the chatroom README for
 more details on channel-side configuration.
 
@@ -206,7 +206,7 @@ Using the default set up, the handoff skill enables this kind of conversation wi
 
 The simplest way to use the handoff feature is to do the following:
 
-1. Clone [chatroom](https://github.com/RasaHQ/chatroom) and [Financial-Demo](https://github.com/GB-x2/finance_chatbot) alongside this repo
+1. Clone [chatroom](https://github.com/GB-x2/chatroom_ui) and [Financial-Demo](https://github.com/GB-x2/finance_chatbot) alongside this repo
 2. In the chatroom repo, install the dependencies:
 ```bash
 yarn install
