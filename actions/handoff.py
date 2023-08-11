@@ -57,7 +57,7 @@ class ActionHandoff(Action):
         handoff_to = tracker.get_slot("handoff_to")
 
         handoff_bot = handoff_config.get(handoff_to, {})
-        url = "http://3.145.51.33:5006"
+        # url = "http://3.145.51.33:5006"
         print(f"URL :: {url}  out")
 
         if url:
