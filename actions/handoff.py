@@ -60,8 +60,9 @@ class ActionHandoff(Action):
         # url = "http://3.145.51.33:5006"
         print(f"URL :: {url}  out")
         url = handoff_bot.get("url")
+        print(f"URL :: {url}")
+        
         if url:
-            print(f"URL :: {url}")
 
             # if tracker.get_latest_input_channel() == "rest":
             print(f"REST")
