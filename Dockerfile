@@ -6,11 +6,11 @@ COPY * .
 
 RUN ls -ltr
 
-#RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements-dev.txt
 
-#COPY . .
+RUN pre-commit install
 
-#COPY * .
+COPY . .
 
 #RUN ls -ltr
 
