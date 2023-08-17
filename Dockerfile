@@ -6,7 +6,7 @@ COPY * .
 
 RUN ls -ltr
 
-RUN pip3 install -r requirements-dev.txt
+RUN pip install -r requirements-dev.txt
 
 RUN pre-commit install
 
