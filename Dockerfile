@@ -14,4 +14,8 @@ RUN pre-commit install
 
 COPY . .
 
+RUN chmod +x nlu_startup.sh
+
+RUN ls -ltr 
+
 ENTRYPOINT ["./nlu_startup.sh"]
