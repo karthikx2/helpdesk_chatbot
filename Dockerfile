@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR /app
 
-COPY * ./
+ADD * ./
 
 RUN ls -ltr
 
