@@ -18,4 +18,4 @@ RUN chmod 777 nlu_startup.sh
 
 RUN ls -ltr 
 
-ENTRYPOINT ["/nlu_startup.sh"]
+ENTRYPOINT ["/app/nlu_startup.sh"]
