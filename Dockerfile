@@ -14,6 +14,4 @@ RUN pre-commit install
 
 COPY . .
 
-#RUN ls -ltr
-
-#CMD ["python3", "main.py"]
+ENTRYPOINT ["./nlu_startup.sh"]
