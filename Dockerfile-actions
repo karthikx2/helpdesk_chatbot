@@ -14,7 +14,7 @@ RUN pre-commit install
 
 COPY . .
 
-RUN chmod 777 nlu_startup.sh
+RUN chmod 777 actions_startup.sh
 
 RUN ls -ltr 
 
