@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: helpdeskchatbotactions 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helpdeskchatbotactions
+  template:
+    metadata:
+      labels:
+        app: helpdeskchatbotactions 
+    spec:
+      containers:
+        - name: helpdeskchatbotactions 
+          image: x2container.azurecr.io/helpdeskchatbotactions
+          ports:
+          - containerPort: 5055
