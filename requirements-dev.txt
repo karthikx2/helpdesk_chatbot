@@ -1,5 +1,6 @@
 -r requirements.txt
 
+websockets==10.0
 # lint/format/types
 black==19.10b0
 flake8==3.7.8
