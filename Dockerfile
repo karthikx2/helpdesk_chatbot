@@ -19,3 +19,5 @@ RUN chmod 777 nlu_startup.sh
 RUN ls -ltr 
 
 ENTRYPOINT ["/app/nlu_startup.sh"]
+
+EXPOSE 5005
